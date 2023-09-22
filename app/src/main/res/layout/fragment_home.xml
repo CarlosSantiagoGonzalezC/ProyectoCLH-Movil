@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="356dp"
+        android:layout_height="660dp"
+        app:cardBackgroundColor="#C6904F"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="660dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="AGREGAR PRODUCTO"
+                android:textAlignment="center"
+                android:textColor="#4A2E22"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/baseline_add_box_24" />
+
+            <EditText
+                android:id="@+id/txtNombreProdu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:background="@drawable/personalizado"
+                android:drawableLeft="@drawable/baseline_contact_emergency_24"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtCodigoProdu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:background="@drawable/personalizado"
+                android:drawableLeft="@drawable/baseline_numbers_24"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Codigo"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtCantidadProdu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:background="@drawable/personalizado"
+                android:drawableLeft="@drawable/baseline_123_24"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Cantidad"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtPrecioProdu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:background="@drawable/personalizado"
+                android:drawableLeft="@drawable/baseline_price_change_24"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Precio"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtDescripcionProdu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:background="@drawable/personalizado"
+                android:drawableLeft="@drawable/baseline_description_24"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Descripcion"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/cbCategoriaProdu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/personalizado_spinner"
+                android:backgroundTint="#E4B984"
+                android:drawableLeft="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="5dp"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/ivFoto"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                tools:src="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btnSubir"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="70dp"
+                android:backgroundTint="#4E3225"
+                android:text="Subir imagen"
+                app:cornerRadius="30dp" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:backgroundTint="#4E3225"
+                android:text="Agregar"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
